@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Reference }}</title>
+    <style>
+        @font-face {
+            font-family: 'Lateef';
+            src: url('./Lateef-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Linux Libertine';
+            src: url('./LinLibertine_R.ttf') format('truetype');
+        }
+
+        #content {
+            padding-top: 40%;
+        }
+
+        #content>p {
+            font-family: 'Lateef', sans-serif;
+            text-align: center;
+            font-size: 45px;
+        }
+
+        #reference {
+            font-family: 'Linux Libertine', serif;
+            font-weight: bold;
+            color: green;
+            font-size: 55px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <p>
+            تقريرك سيكون جاهز في خلال ساعة <br /> نرجو منك التواصل معنا في حال استمرار المشكلة برقم التذكرة
+            <br><br>
+            <span id="reference">#{{ .Reference }}</span>
+        </p>
+    </div>
+</body>
+
+</html>
